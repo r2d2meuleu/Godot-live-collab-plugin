@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://cjke35be5vp62"]
+
+[ext_resource type="Texture2D" uid="uid://b887dyiu4nuju" path="res://samples/subdirectory/color.png" id="1_x8o4e"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "sample cool text"
+
+[node name="Label2" type="Label" parent="CanvasLayer"]
+offset_left = 162.0
+offset_top = 153.0
+offset_right = 289.0
+offset_bottom = 176.0
+text = "<--- cool texture"
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+offset_left = 33.0
+offset_top = 92.0
+offset_right = 141.0
+offset_bottom = 203.0
+texture = ExtResource("1_x8o4e")
+expand_mode = 1

@@ -1,0 +1,109 @@
+[gd_scene format=3 uid="uid://ddte64i6hw3nt"]
+
+[node name="Live Collab" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -802.0
+offset_bottom = -248.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Connection panel" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -39.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Host button" type="Button" parent="Connection panel"]
+layout_mode = 0
+offset_right = 99.0
+offset_bottom = 31.0
+text = "Start server"
+
+[node name="Connect button" type="Button" parent="Connection panel"]
+layout_mode = 0
+offset_top = 37.0
+offset_right = 99.0
+offset_bottom = 68.0
+text = "Connect"
+
+[node name="Server port input" type="LineEdit" parent="Connection panel"]
+layout_mode = 0
+offset_left = 250.0
+offset_top = 17.0
+offset_right = 317.063
+offset_bottom = 48.0
+text = "6969"
+placeholder_text = "Port"
+max_length = 4
+
+[node name="Server address input" type="LineEdit" parent="Connection panel"]
+layout_mode = 0
+offset_left = 114.0
+offset_top = 17.0
+offset_right = 239.0
+offset_bottom = 48.0
+text = "127.0.0.1"
+placeholder_text = "Address"
+
+[node name="Username input" type="LineEdit" parent="Connection panel"]
+layout_mode = 0
+offset_top = 81.0
+offset_right = 317.0
+offset_bottom = 112.0
+placeholder_text = "Username"
+
+[node name="Server panel" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -51.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="stop server" type="Button" parent="Server panel"]
+layout_mode = 0
+offset_right = 114.0
+offset_bottom = 31.0
+text = "Stop server"
+
+[node name="force sync" type="Button" parent="Server panel"]
+layout_mode = 0
+offset_top = 40.0
+offset_right = 96.0
+offset_bottom = 71.0
+text = "Force Sync All"
+
+[node name="client list" type="ItemList" parent="Server panel"]
+layout_mode = 0
+offset_top = 77.0
+offset_right = 350.0
+offset_bottom = 277.0
+theme_override_colors/guide_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/font_selected_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hovered_color = Color(1, 1, 1, 1)
+
+[node name="Client panel" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = -46.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="stop client" type="Button" parent="Client panel"]
+layout_mode = 0
+offset_right = 114.0
+offset_bottom = 31.0
+text = "Stop client"
