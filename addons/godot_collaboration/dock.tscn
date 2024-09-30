@@ -107,3 +107,13 @@ layout_mode = 0
 offset_right = 114.0
 offset_bottom = 31.0
 text = "Stop client"
+
+[node name="client list" type="ItemList" parent="Client panel"]
+offset_top = 77.0
+offset_right = 350.0
+offset_bottom = 277.0
+theme_override_colors/guide_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_colors/font_selected_color = Color(1, 1, 1, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hovered_color = Color(1, 1, 1, 1)
