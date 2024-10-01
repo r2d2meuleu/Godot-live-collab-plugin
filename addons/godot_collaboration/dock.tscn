@@ -2,13 +2,11 @@
 
 [node name="Live Collab" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_right = -802.0
-offset_bottom = -248.0
+anchor_right = 0.303819
+anchor_bottom = 0.617284
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Connection panel" type="Control" parent="."]
 layout_mode = 1
@@ -57,6 +55,20 @@ offset_top = 81.0
 offset_right = 317.0
 offset_bottom = 112.0
 placeholder_text = "Username"
+max_length = 25
+
+[node name="user color" type="ColorPicker" parent="Connection panel"]
+layout_mode = 0
+offset_top = 123.0
+offset_right = 317.0
+offset_bottom = 275.0
+color = Color(0.239087, 0.653044, 1, 1)
+edit_alpha = false
+picker_shape = 4
+can_add_swatches = false
+sampler_visible = false
+color_modes_visible = false
+presets_visible = false
 
 [node name="Server panel" type="Control" parent="."]
 visible = false
@@ -109,6 +121,7 @@ offset_bottom = 31.0
 text = "Stop client"
 
 [node name="client list" type="ItemList" parent="Client panel"]
+layout_mode = 0
 offset_top = 77.0
 offset_right = 350.0
 offset_bottom = 277.0
